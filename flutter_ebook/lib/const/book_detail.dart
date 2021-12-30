@@ -17,21 +17,20 @@ class BookDescriptionDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-        // onTap: onPressed(),
         child: Container(
-            padding: const EdgeInsets.only(left: 5, right: 5),
+            padding: const EdgeInsets.only(right: 20),
             child: Column(
               children: [
                 const SizedBox(
-                  height: 15,
+                  height: 20,
                 ),
                 Row(
                   mainAxisSize: MainAxisSize.max,
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      width: 120,
-                      height: 180,
+                      width: 130,
+                      height: 220,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(20),
                           // color: Colors.blue,
@@ -54,8 +53,9 @@ class BookDescriptionDetail extends StatelessWidget {
                           child: Text(
                             text,
                             style: const TextStyle(
+                              fontFamily: 'Poppins',
                               fontWeight: FontWeight.bold,
-                              fontSize: 16,
+                              fontSize: 19,
                             ),
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
@@ -67,15 +67,16 @@ class BookDescriptionDetail extends StatelessWidget {
                         Text(
                           authors,
                           style: const TextStyle(
+                              fontFamily: 'Poppins',
                               fontWeight: FontWeight.bold,
-                              fontSize: 12,
-                              color: Colors.blue),
+                              fontSize: 14,
+                              color: Colors.grey),
                         ),
                         const SizedBox(
                           height: 10,
                         ),
                         SizedBox(
-                            width: 220,
+                            width: 200,
                             child: Row(
                               children: [
                                 Container(
@@ -89,9 +90,10 @@ class BookDescriptionDetail extends StatelessWidget {
                                     ),
                                     child: const Center(
                                       child: Text(
-                                        'Criminal',
-                                        style:
-                                            TextStyle(color: Colors.blueAccent),
+                                        'Fiction',
+                                        style: TextStyle(
+                                            fontFamily: 'Poppins',
+                                            color: Colors.blueAccent),
                                       ),
                                     )),
                                 Container(
@@ -106,9 +108,10 @@ class BookDescriptionDetail extends StatelessWidget {
                                     ),
                                     child: const Center(
                                       child: Text(
-                                        'Life',
-                                        style:
-                                            TextStyle(color: Colors.blueAccent),
+                                        'Literary',
+                                        style: TextStyle(
+                                            fontFamily: 'Poppins',
+                                            color: Colors.blueAccent),
                                       ),
                                     ))
                               ],
@@ -118,10 +121,10 @@ class BookDescriptionDetail extends StatelessWidget {
                         ),
                         Container(
                           width: 200,
-                          height: 40,
+                          height: 37,
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Colors.blue,
+                            color: Colors.blueAccent,
                           ),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.center,
@@ -133,7 +136,8 @@ class BookDescriptionDetail extends StatelessWidget {
                               ),
                               Text(
                                 'Download Epub',
-                                style: TextStyle(color: Colors.white),
+                                style: TextStyle(
+                                    fontFamily: 'Poppins', color: Colors.white),
                               )
                             ],
                           ),
@@ -143,16 +147,17 @@ class BookDescriptionDetail extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 30,
                 ),
                 const Align(
                   alignment: Alignment.centerLeft,
                   child: Text(
                     'Book Description',
                     style: TextStyle(
+                        fontFamily: 'Poppins',
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
-                        color: Colors.blue),
+                        color: Colors.lightBlue),
                   ),
                 ),
                 const Divider(
@@ -160,16 +165,24 @@ class BookDescriptionDetail extends StatelessWidget {
                   color: Colors.grey,
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
-                Text(description, style: const TextStyle(fontSize: 16)),
+                Text(description,
+                    style: const TextStyle(
+                        fontFamily: 'Poppins',
+                        fontSize: 16,
+                        color: Colors.grey,
+                        fontWeight: FontWeight.w600)),
                 const Padding(
-                  padding: EdgeInsets.only(top: 18.0),
+                  padding: EdgeInsets.only(top: 18.0, left: 19),
                   child: Align(
                     alignment: Alignment.centerRight,
                     child: Text(
-                      'Show less',
-                      style: TextStyle(fontSize: 16, color: Colors.blue),
+                      'show less',
+                      style: TextStyle(
+                          fontFamily: 'Poppins',
+                          fontSize: 14,
+                          color: Colors.blue),
                     ),
                   ),
                 ),

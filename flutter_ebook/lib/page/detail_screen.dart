@@ -23,21 +23,28 @@ class _Detail_screenState extends State<Detailscreen> {
         appBar: AppBar(
           actions: [
             IconButton(
-                onPressed: () {
-                  setState(() {
-                    _isPressed = !_isPressed;
-                  });
-                },
-                icon: (_isPressed == false)
-                    ? const Icon(
-                        Icons.favorite,
-                        color: Colors.red,
-                      )
-                    : const Icon(
-                        Icons.favorite_border,
-                      )),
+              onPressed: () {
+                setState(() {
+                  _isPressed = !_isPressed;
+                });
+              },
+              icon: (_isPressed == false)
+                  ? const Icon(
+                      Icons.favorite,
+                      color: Colors.red,
+                      size: 30,
+                    )
+                  : const Icon(
+                      Icons.favorite_outline,
+                      color: Colors.black,
+                      size: 30,
+                    ),
+            ),
             const SizedBox(width: 10),
-            const Icon(Icons.share),
+            const Icon(
+              Icons.file_upload_outlined,
+              size: 30,
+            ),
             const SizedBox(width: 10),
           ],
         ),
